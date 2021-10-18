@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="index.js"></script>
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+    <title>E-Commerce</title>
+</head>
+
+<body>
+    <section id="landing">
+        <nav>
+            <div class="nav__container">
+                <img class="logo" src="Library.svg" alt="">
+                <ul class="nav__links">
+                    <li><a class="nav__link" href="#">Home</a></li>
+                    <li><a class="nav__link" href="#">Contact</a></li>
+                    <li><a class="nav__link nav__link--primary" href="#">Video Games</a></li>
+                </ul>
+
+                <button class="btn__menu" onclick="openMenu()">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="menu__backdrop">
+                    <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+                        <i class="fas fa-times"></i>
+                    </button>
+                    <ul class="menu__links">
+                        <li class="menu__list">
+                            <a href="#" class="menu__link" onclick="closeMenu()">Home</a>
+                        </li>
+                        <li class="menu__list">
+                            <a href="#features" class="menu__link" onclick="closeMenu()">Games</a>
+                        </li>
+                        <li class="menu__list">
+                            <a class="menu__link no-cursor" onclick="closeMenu()">Contacts</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!---Fix header later--->
+        <header>
+            <div class="header__container">
+                <div class="header__description">
+                    <h1>America's most awarded online gaming platform</h1>
+                    <h2>Find your dream game with <span class="orange">Library</span></h2>
+                    <a href="#features">
+                        <button class="btn">
+                            Browse Games
+                        </button>
+                    </a>
+                </div>
+                <figure class="header__img--wrapper">
+                    <img src="undraw_old_day_6x25.svg" alt="">
+                </figure>
+            </div>
+        </header>
+    </section>
+    <!----Section, Container, Row is seen in alot of websites in that order------>
+    <main>
+        <section id="highlights">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section__title">
+                        Why choose <span class="orange">Library?</span>
+                    </h2>
+                    <div class="highlight__wrapper">
+                        <div class="highlight">
+                            <div class="highlight__img">
+                                <i class="fas fa-bolt"></i>
+                            </div>
+                            <h3 class="highlight__subtitle">
+                                Easy and Quick
+                            </h3>
+                            <p class="highlight__para">
+                                Get access to the game you purchased online instantly.
+                            </p>
+                        </div>
+                        <div class="highlight">
+                            <div class="highlight__img">
+                                <i class="fas fa-gamepad"></i>
+                            </div>
+                            <h3 class="highlight__subtitle">
+                                10,000+ Games
+                            </h3>
+                            <p class="highlight__para">
+                                Library has games in all your favorite genres.
+                            </p>
+                        </div>
+                        <div class="highlight">
+                            <div class="highlight__img">
+                                <i class="fas fa-tag"></i>
+                            </div>
+                            <h3 class="highlight__subtitle">
+                                Affordable
+                            </h3>
+                            <p class="highlight__para">
+                                Get your hands on popular games as low as $15.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+        <section id="features">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section__title">
+                        Featured <span class="orange">Games</span>
+                    </h2>
+                    <div class="games">
+                        <div class="game">
+                            <figure class="game__img-wrapper">
+                                <img class="game__img" src="game1.jpg" alt="">
+                            </figure>
+                            <div class="game__title">
+                                Grand Theft Auto V - PlayStation 4
+                            </div>
+                            <div class="game__ratings">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <div class="game__price">
+                                <span class="game__price--normal">$29.99</span> $11.99
+                            </div>
+                        </div>
+                        <div class="game">
+                            <figure class="game__img-wrapper">
+                                <img class="game__img" src="game2.jpg" alt="">
+                            </figure>
+                            <div class="game__title">
+                                Metroid Dread - Nintendo Switch
+                            </div>
+                            <div class="game__ratings">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <div class="game__price">
+                                <span class="game__price--normal">$59.99</span> $39.99
+                            </div>
+                        </div>
+                        <div class="game">
+                            <figure class="game__img-wrapper">
+                                <img class="game__img" src="game3.jpg" alt="">
+                            </figure>
+                            <div class="game__title">
+                                Halo Master Chief Collection - Xbox One
+                            </div>
+                            <div class="game__ratings">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="game__price">
+                                <span class="game__price--normal">$29.99</span> $12.99
+                            </div>
+                        </div>
+                        <div class="game">
+                            <figure class="game__img-wrapper">
+                                <img class="game__img" src="game4.jpg" alt="">
+                            </figure>
+                            <div class="game__title">
+                                NBA 2K22 - PlayStation 5
+                            </div>
+                            <div class="game__ratings">
+                                <i class="fas fa-star"></i>
+
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <div class="game__price">
+                                <span class="game__price--normal">$59.99</span> $24.99
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <section id="other">
+            <div class="row">
+                <h2 class="section__title">
+                    Other <span class="orange">Games</span>
+                </h2>
+                <div class="games">
+                    <div class="game">
+                        <figure class="game__img-wrapper">
+                            <img class="game__img" src="game5.jpg" alt="">
+                        </figure>
+                        <div class="game__title">
+                            Kingdom Hearts 2.5 HD Remix - PlayStation 3
+                        </div>
+                        <div class="game__ratings">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="game__price">
+                            <span class="game__price--normal">$19.99</span> $9.99
+                        </div>
+                    </div>
+                    <div class="game">
+                        <figure class="game__img-wrapper">
+                            <img class="game__img" src="game6.png" alt="">
+                        </figure>
+                        <div class="game__title">
+                            Super Mario Galaxy 2 - Nintendo Wii
+                        </div>
+                        <div class="game__ratings">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="game__price">
+                            <span class="game__price--normal">$19.99</span> $9.99
+                        </div>
+                    </div>
+                    <div class="game">
+                        <figure class="game__img-wrapper">
+                            <img class="game__img" src="game7.jpg" alt="">
+                        </figure>
+                        <div class="game__title">
+                            The Elder Scrolls V: Skyrim - Xbox 360
+                        </div>
+                        <div class="game__ratings">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <div class="game__price">
+                            <span class="game__price--normal">$14.99</span> $4.99
+                        </div>
+                    </div>
+                    <div class="game">
+                        <figure class="game__img-wrapper">
+                            <img class="game__img" src="game8.jpg" alt="">
+                        </figure>
+                        <div class="game__title">
+                            Donkey Kong Country Returns 3D - Nintendo 3DS
+                        </div>
+                        <div class="game__ratings">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="game__price">
+                            <span class="game__price--normal">$19.99</span> $11.99
+                        </div>
+                    </div>
+                    <div class="game">
+                        <figure class="game__img-wrapper">
+                            <img class="game__img" src="game9.jpg" alt="">
+                        </figure>
+                        <div class="game__title">
+                            Ratchet & Clank - PlayStation 2
+                        </div>
+                        <div class="game__ratings">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="game__price">
+                            <span class="game__price--normal">$19.99</span> $9.99
+                        </div>
+                    </div>
+                    <div class="game">
+                        <figure class="game__img-wrapper">
+                            <img class="game__img" src="game10.jpg" alt="">
+                        </figure>
+                        <div class="game__title">
+                            Mega Man 2 - Nintendo NES
+                        </div>
+                        <div class="game__ratings">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <div class="game__price">
+                            <span class="game__price--normal">$79.99</span> $39.99
+                        </div>
+                    </div>
+                    <div class="game">
+                        <figure class="game__img-wrapper">
+                            <img class="game__img" src="game11.jpg" alt="">
+                        </figure>
+                        <div class="game__title">
+                            Sonic The Hedgehog 2 - Sega Genesis
+                        </div>
+                        <div class="game__ratings">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <div class="game__price">
+                            <span class="game__price--normal">$29.99</span> $10.99
+                        </div>
+                    </div>
+                    <div class="game">
+                        <figure class="game__img-wrapper">
+                            <img class="game__img" src="game12.jpg" alt="">
+                        </figure>
+                        <div class="game__title">
+                            Marvel vs. Capcom 2 - Sega Dreamcast
+                        </div>
+                        <div class="game__ratings">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="game__price">
+                            <span class="game__price--normal">$89.99</span> $49.99
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <section id="more">
+            <div class="container">
+                <div class="row__column">
+                    <h2 class="section__title">Explore more <span class="orange">Games</span></h2>
+                    <a href="#features">
+                        <button class="btn">Browse Games</button>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="row row__column">
+                <a href="#">
+                    <figure class="footer__logo">
+                        <img src="Library.svg" class="footer__logo--img" alt="">
+                    </figure>
+                </a>
+                <div class="footer__list">
+                    <a href="" class="footer__link">Home</a>
+                    <a href="" class="footer__link no-cursor">About</a>
+                    <a href="" class="footer__link">Games</a>
+                    <a href="" class="footer__link no-cursor">Contact</a>
+                </div>
+                <div class="footer__copyright">Copyright &copy; 2021 Library</div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
