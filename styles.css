@@ -141,9 +141,8 @@ li {
     color: #F99700;
 }
 
-header {
-    height: calc(100vh - 80px); /*height of nav bar, fills rest of page*/
-}
+
+
 
 
 
@@ -160,6 +159,7 @@ header {
 
 img {
      width: 100%; /* .logo class has priority */
+    
 }
 
 
